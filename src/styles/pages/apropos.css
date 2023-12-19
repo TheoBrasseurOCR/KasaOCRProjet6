@@ -1,0 +1,17 @@
+@media (min-width: 993px) {
+  .about {
+    margin: 40px 60px 60px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about {
+    margin: 20px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 15px 25px 20px;
+  }
+}

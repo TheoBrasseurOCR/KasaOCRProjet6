@@ -320,3 +320,101 @@ a {
   }
 }
 /* ________________________________________________ ERROR */
+/* __________________________________________________ APROPOS */
+@media (min-width: 993px) {
+  .about {
+    margin: 40px 60px 60px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about {
+    margin: 20px 40px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 15px 25px 20px;
+  }
+}
+
+.about_collapses {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .about_collapses {
+    width: 85%;
+    margin: 2em auto;
+  }
+}
+@media (min-width: 993px) {
+  .about_collapses {
+    width: 85%;
+    margin: 1.5em auto;
+  }
+}
+/* ____________________________________________ APROPOS */
+/* ____________________________________________ APROPOS COLLAPSE */
+.collapses {
+  margin-top: 1.7em;
+  width: 100%;
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .collapses {
+    margin-top: 0;
+  }
+}
+@media (min-width: 993px) {
+  .collapses {
+    margin-top: 0;
+  }
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.collapse_button {
+  cursor: pointer;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.2rem;
+  padding: 0 1.2em;
+  background-color: #FF6060;
+  border-radius: 8px;
+}
+.collapse_button h2 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+}
+.collapse_button .arrow-container {
+  margin-left: auto;
+}
+.collapse_button .arrow-container .arrow {
+  display: flex;
+  font-size: 1.7em;
+  color: white;
+}
+.collapse_button .arrow-container-up {
+  transform: rotate(180deg);
+}
+.collapse_content {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: -0.7em;
+  padding: 1.5em 1em 0.5em;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  border-radius: 8px;
+  animation: slide 0.7s ease-in-out;
+}
+/* ____________________________________________ APROPOS COLLAPSE */
