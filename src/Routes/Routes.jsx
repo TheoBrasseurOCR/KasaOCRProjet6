@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 
-function AllRoutes() {
+function RoutesAll() {
     return (
         <BrowserRouter>
             <Routes>
@@ -12,5 +12,5 @@ function AllRoutes() {
         </BrowserRouter>
     )
 }
-export default AllRoutes;
+export default RoutesAll;
 

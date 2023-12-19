@@ -14,6 +14,7 @@ ul {
 a {
   color: inherit;
 }
+/* ______________________________________________ HEADER */
 .header {
   display: flex;
   font-weight: 400;
@@ -69,7 +70,8 @@ a {
     width: 170px;
   }
 }
-
+/* ______________________________________________ HEADER */
+/* ___________________________________________ BANNER */
 .banner {
   display: flex;
   flex-direction: column;
@@ -110,6 +112,7 @@ a {
     height: 11em;
   }
 }
+/* ___________________________________________________ BANNER */
 @media (min-width: 993px) {
   .home {
     margin: 40px 60px 40px;
@@ -125,6 +128,7 @@ a {
     margin: 15px 25px 20px;
   }
 }
+/* __________________________________________________ FOOTER  */
 .footer {
   margin: 0;
   display: flex;
@@ -154,3 +158,4 @@ a {
     font-size: 15px;
   }
 }
+/* __________________________________________________ FOOTER  */

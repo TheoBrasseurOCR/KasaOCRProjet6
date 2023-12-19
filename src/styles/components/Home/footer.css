@@ -1,0 +1,36 @@
+.footer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 190px;
+    width: 100%;
+  }
+
+  .footer_img {
+    width: 110px;
+  }
+  
+  .footer p {
+    font-size: 10px;
+    color: white;
+  }
+
+
+  @media (min-width: 993px) {
+    .footer {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .footer_img {
+      width: 80px;
+    }
+
+    .footer p {
+      font-size: 15px;
+    }
+  }
+  
