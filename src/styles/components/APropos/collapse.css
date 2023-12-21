@@ -1,21 +1,11 @@
-.about_collapses {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .collapses {
-    margin-top: 1.7em;
-    width: 100%;
-  }
-  
-  .collapse {
+.collapse {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .collapse_button {
+.collapse_button {
     cursor: pointer;
     z-index: 1;
     display: flex;
@@ -27,7 +17,7 @@
     border-radius: 8px;
   }
 
-  .collapse_button h2 {
+.collapse_button h2 {
     display: flex;
     align-items: center;
     color: white;
@@ -36,21 +26,23 @@
     margin: 0;
   }
 
-  .collapse_button .arrow-container {
+.collapse_button .arrow-container {
+    transform: rotate(270deg);
     margin-left: auto;
   }
 
-  .collapse_button .arrow-container .arrow {
+.collapse_button .arrow-container .arrow {
     display: flex;
     font-size: 1.7em;
     color: white;
   }
 
-  .collapse_button .arrow-container-up {
-    transform: rotate(180deg);
+.collapse_button .arrow-container-down {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
   }
   
-  .collapse_content {
+.collapse_content {
     font-size: 1.1rem;
     font-weight: 400;
     line-height: 30px;
@@ -59,7 +51,7 @@
     color: #FF6060;
     background-color: #F6F6F6;
     border-radius: 8px;
-    animation: slide 0.7s ease-in-out;
+    animation: slide 0.5s ease-in-out;
   }
 
   @keyframes slide {
@@ -69,28 +61,4 @@
     100% {
       opacity: 1;
     }
-  }
-
-
-  @media (min-width: 993px) {
-    .collapses {
-        margin-top: 0;
-      }
-
-    .about_collapses {
-        width: 85%;
-        margin: 1.5em auto;
-      }
-  }
-
-
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-    .collapses {
-        margin-top: 0;
-      }
-
-    .about_collapses {
-        width: 85%;
-        margin: 2em auto;
-      }
   }

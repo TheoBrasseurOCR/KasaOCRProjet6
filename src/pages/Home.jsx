@@ -3,7 +3,7 @@ import Header from '../components/Home/Header/Header';
 import Banner from '../components/Home/Banner/Banner';
 import Footer from '../components/Home/Footer/Footer';
 import Gallery from '../components/Home/Gallery/Gallery';
-import Logements from '../data/logements.json';
+import Logements from '../data/accommodations.json';
 
 function Home() {
     return(

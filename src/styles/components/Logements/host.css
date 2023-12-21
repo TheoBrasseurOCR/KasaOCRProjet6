@@ -1,0 +1,38 @@
+.host_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.host_container h3 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0.3rem;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 0.8rem;
+    text-align: right;
+    width: 4rem;
+  }
+
+.host_container img {
+    border-radius: 50%;
+    height: 50px;
+  }
+
+
+  @media (min-width: 993px) {
+    .host_container h3 {
+      font-size: 1.2rem;
+    }
+
+    .host_container img { 
+        height: 70px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .host_container h3 {
+      font-size: 0.9rem;
+    }
+  }
