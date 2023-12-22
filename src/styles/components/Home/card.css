@@ -7,23 +7,11 @@
     margin-bottom: 25px;
     transition: transform 0.25s ease-in-out;
   }
+
   .accommodation:hover {
     transform: scale(1.02);
   }
-  @media screen and (min-width: 769px) and (max-width: 992px) {
-    .accommodation {
-      width: 48%;
-      height: 200px;
-      margin-bottom: 30px;
-    }
-  }
-  @media (min-width: 993px) {
-    .accommodation {
-      width: 31%;
-      height: 290px;
-      margin-bottom: 40px;
-    }
-  }
+
   .accommodation .background {
     position: absolute;
     z-index: 1;
@@ -32,6 +20,7 @@
     width: 100%;
     opacity: 0.5;
   }
+
   .accommodation_img {
     position: absolute;
     width: 100%;
@@ -39,6 +28,7 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
+
   .accommodation_title {
     position: absolute;
     bottom: 0;
@@ -48,8 +38,25 @@
     color: white;
     z-index: 2;
   }
+
+
   @media (min-width: 993px) {
+    .accommodation {
+      width: 31%;
+      height: 290px;
+      margin-bottom: 40px;
+    }
+
     .accommodation_title {
       font-size: 15px;
+    }
+  }
+
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .accommodation {
+      width: 48%;
+      height: 200px;
+      margin-bottom: 30px;
     }
   }

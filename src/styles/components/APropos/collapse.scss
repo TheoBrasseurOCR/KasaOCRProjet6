@@ -1,0 +1,63 @@
+$color_1: white;
+$color_2: #FF6060;
+$background-color_1: #FF6060;
+$background-color_2: #F6F6F6;
+
+@keyframes slide {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.collapse {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.collapse_button {
+	cursor: pointer;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 2.2rem;
+	padding: 0 1.2em;
+	background-color: $background-color_1;
+	border-radius: 8px;
+	h2 {
+		display: flex;
+		align-items: center;
+		color: $color_1;
+		font-size: 1.1rem;
+		font-weight: 400;
+		margin: 0;
+	}
+	.arrow-container {
+		transform: rotate(180deg);
+		transition: transform 0.2s;
+		margin-left: auto;
+		.arrow {
+			display: flex;
+			font-size: 1.7em;
+			color: $color_1;
+		}
+	}
+	.arrow-container-down {
+		transform: rotate(360deg);
+		transition: transform 0.2s;
+	}
+}
+.collapse_content {
+	font-size: 1.1rem;
+	font-weight: 400;
+	line-height: 30px;
+	margin-top: -0.7em;
+	padding: 1.5em 1em 0.5em;
+	color: $color_2;
+	background-color: $background-color_2;
+	border-radius: 8px;
+	animation: slide 0.5s ease-in-out;
+}

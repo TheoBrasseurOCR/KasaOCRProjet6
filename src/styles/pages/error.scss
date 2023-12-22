@@ -1,0 +1,66 @@
+$color_1: #ff6060;
+
+.error {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $color_1;
+	margin-bottom: 100px;
+	a {
+		margin-top: 7em;
+		text-decoration: underline;
+		font-size: 15px;
+	}
+}
+.error_title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h1 {
+		font-size: 250px;
+		font-weight: 700;
+		margin: 50px 0 10px;
+	}
+	p {
+		font-size: 30px;
+		text-align: center;
+		margin: 0 2em 0;
+	}
+}
+@media (min-width: 993px) {
+	.error_container {
+		margin: 40px 60px 40px;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.error_title {
+		h1 {
+			font-size: 150px;
+		}
+		p {
+			font-size: 20px;
+		}
+	}
+	.error_container {
+		margin: 20px 40px 40px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.error_title {
+		h1 {
+			font-size: 100px;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
+	.error {
+		a {
+			margin-top: 10em;
+			font-size: 12px;
+		}
+	}
+	.error_container {
+		margin: 15px 25px 20px;
+	}
+}
