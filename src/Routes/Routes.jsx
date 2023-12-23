@@ -11,9 +11,8 @@ function RoutesAll() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route exact path="/home" element={<Home />} />
                 <Route exact path="/apropos" element={<APropos />} />
-                <Route exact path="/accommodation/:id" element={<Logements />} />
+                <Route exact path="/logements/:id" element={<Logements />} />
                 <Route exact path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>

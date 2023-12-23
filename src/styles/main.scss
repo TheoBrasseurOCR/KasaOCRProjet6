@@ -1,19 +1,19 @@
-@import '../styles/components/APropos/collapse.scss';
+@import './components/collapse.scss';
 
-@import '../styles/components/Home/banner.scss';
-@import '../styles/components/Home/card.scss';
-@import '../styles/components/Home/footer.scss';
-@import '../styles/components/Home/gallery.scss';
-@import '../styles/components/Home/header.scss';
+@import './components/banner.scss';
+@import './components/card.scss';
+@import './components/footer.scss';
+@import './components/gallery.scss';
+@import './components/header.scss';
 
-@import '../styles/components/Logements/carousel.scss';
-@import '../styles/components/Logements/collapses.scss';
-@import '../styles/components/Logements/host.scss';
-@import '../styles/components/Logements/presentation.scss';
-@import '../styles/components/Logements/rating.scss';
-@import '../styles/components/Logements/tag.scss';
+@import './components/carousel.scss';
+@import './components/collapses.scss';
+@import './components/host.scss';
+@import './components/presentation.scss';
+@import './components/rating.scss';
+@import './components/tag.scss';
 
-@import '../styles/pages/accommodations.scss';
-@import '../styles/pages/apropos.scss';
-@import '../styles/pages/error.scss';
-@import '../styles/pages/home.scss';
+@import './pages/accommodations.scss';
+@import './pages/apropos.scss';
+@import './pages/error.scss';
+@import './pages/home.scss';

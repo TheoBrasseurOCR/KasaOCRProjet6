@@ -7,18 +7,7 @@ $background-color_2: #F6F6F6;
 	background-color: $background-color_1;
 	padding: 0;
 	margin-top: 20px;
-}
-@media screen and (min-width: 769px) and (max-width: 992px) {
-	.gallery {
-		flex-wrap: wrap;
-		flex-direction: inherit;
-		justify-content: space-between;
-		background-color: $background-color_2;
-		border-radius: 15px;
-		padding: 45px 45px 0;
-		margin-top: 1.5em;
-		gap: 10px;
-	}
+	justify-content: space-between;
 }
 @media (min-width: 993px) {
 	.gallery {
@@ -32,3 +21,16 @@ $background-color_2: #F6F6F6;
 		gap: 10px;
 	}
 }
+@media screen and (min-width: 769px) and (max-width: 992px) {
+	.gallery {
+		flex-wrap: wrap;
+		flex-direction: inherit;
+		justify-content: space-between;
+		background-color: $background-color_2;
+		border-radius: 15px;
+		padding: 45px 45px 0;
+		margin-top: 1.5em;
+		gap: 10px;
+	}
+}
+

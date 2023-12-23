@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import PictureCounter from '../PictureCounter/PictureCounter';
+import PictureCounter from './PictureCounter';
 
 class Carousel extends Component {
     constructor(props) {
@@ -16,7 +16,6 @@ class Carousel extends Component {
         const { pictures } = this.props;
         const { pictureIndex } = this.state;
 
-        //Calculate the new index of the image according to the direction
         let newPictureIndex;
         if (direction === 'previous') {
             newPictureIndex = pictureIndex === 0 ? pictures.length - 1 : pictureIndex - 1;
@@ -24,7 +23,6 @@ class Carousel extends Component {
             newPictureIndex = pictureIndex === pictures.length - 1 ? 0 : pictureIndex + 1;
         }
 
-        // Updates the state of the component with the new image index
         this.setState({ pictureIndex: newPictureIndex });
     };
 
@@ -44,7 +42,7 @@ class Carousel extends Component {
                 <div className='carousel_arrows'>
                     <div
                         className='carousel_arrow'
-                        onClick={() => this.handleArrowClick('previous')} // Use handleArrowClick method to handle user click
+                        onClick={() => this.handleArrowClick('previous')}
                         >
                             <FontAwesomeIcon icon={faAngleLeft} className='arrow' />
                         </div>

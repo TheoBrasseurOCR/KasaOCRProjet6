@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../../images/logo_kasa.svg';
+import logo from '../images/logo_kasa.svg';
 
 function Header() {
     return(
@@ -14,7 +14,7 @@ function Header() {
                         <NavLink 
                             className={({isActive}) => (isActive ? 'header_nav_link_navlink header_nav_link_active' : 'header_nav_link_navlink header_nav_link_inactive' )}
                             title='Accueil'
-                            to='/home'>
+                            to='/'>
                                 Accueil
                         </NavLink>
                     </li>

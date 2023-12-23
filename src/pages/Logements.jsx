@@ -1,17 +1,18 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
-import Header from '../components/Home/Header/Header';
-import Footer from '../components/Home/Footer/Footer';
-import Carousel from '../components/Logements/Carousel/Carousel';
-import accommodations from '../data/accommodations.json';
-import Presentation from '../components/Logements/Presentation/Presentation';
-import Collapse from '../components/Logements/Collapse/Collapse';
+import { useParams } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Carousel from '../components/Carousel';
+import Logements from '../data/logements.json';
+import Presentation from '../components/Presentation';
+import LogementsCollapse from '../components/LogementsCollapse';
+import Error from './Error'
 
 function Accommodation() {
     const { id } = useParams();
-    const accommodation = accommodations.find((item) => item.id === id)
+    const accommodation = Logements.find((item) => item.id === id)
 
-    return !accommodation ? (<Navigate to="/error" />) : ( 
+    return !accommodation ? <Error /> : ( 
         <section>
         <div className='accommodation_page'>
             <Header />
@@ -28,11 +29,11 @@ function Accommodation() {
                     rating={accommodation.rating}
                 />
                 <div className='accommodation_collapses collapses'>
-                    <Collapse 
+                    <LogementsCollapse 
                         title="Description"
                         content={<p>{accommodation.description}</p>} 
                     />
-                    <Collapse 
+                    <LogementsCollapse 
                         title="Équipements"
                         content={
                             <ul>

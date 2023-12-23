@@ -1,5 +1,5 @@
 import React from 'react';
-import imgBannerAccueil from '../../../images/img_home_banner.webp';
+import imgBannerAccueil from '../images/img_home_banner.webp';
 
 function Banner() {
     return (
