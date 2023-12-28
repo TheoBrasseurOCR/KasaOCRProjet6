@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from '../components/Header';
 import AProposBanner from '../components/AProposBanner';
-import AProposCollapse from '../components/AProposCollapse';
+// Import de la variable Collapses depuis Collapse.jsx
+import { Collapses } from '../components/Collapse';
 import Values from '../data/values.json';
 import Footer from '../components/Footer';
 
@@ -12,7 +13,7 @@ function APropos() {
                 <Header />
                 <AProposBanner />
                 <div className='about_collapses'>
-                    <AProposCollapse data={Values} />
+                    <Collapses data={Values} />
                 </div>
             </div>
             <Footer />

@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 import Carousel from '../components/Carousel';
 import Logements from '../data/logements.json';
 import Presentation from '../components/Presentation';
-import LogementsCollapse from '../components/LogementsCollapse';
+// Import de Collapse depuis Collapse.jsx
+import { Collapse } from '../components/Collapse';
 import Error from './Error'
 
 function Accommodation() {
@@ -29,11 +30,11 @@ function Accommodation() {
                     rating={accommodation.rating}
                 />
                 <div className='accommodation_collapses collapses'>
-                    <LogementsCollapse 
+                    <Collapse 
                         title="Description"
                         content={<p>{accommodation.description}</p>} 
                     />
-                    <LogementsCollapse 
+                    <Collapse 
                         title="Équipements"
                         content={
                             <ul>

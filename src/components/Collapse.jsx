@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
-function InfosCollapse({ title, content }) {
+// Composant Collapse Logement
+function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
     const toggleCollapse = () => {
         setIsOpen(!isOpen);
@@ -21,12 +22,13 @@ function InfosCollapse({ title, content }) {
     );
 };
 
+// Composant Collapses A Propos
 function Collapses(props) {
     return (
         <div className='collapses'>
             {props.data && props.data.map((data, index) => {
                 return (
-                    <InfosCollapse
+                    <Collapse
                         key={
                             `${index}` +
                             `${Object.values(data)}`.split(" ").join("").slice(10, 20)
@@ -40,4 +42,4 @@ function Collapses(props) {
     );
 }
 
-export default Collapses;
+export { Collapse, Collapses };
