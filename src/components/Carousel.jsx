@@ -37,7 +37,9 @@ class Carousel extends Component {
                     alt={`${title} ${pictureIndex +1}`}
                     />
                 }
+                {pictures.length > 1 && ( // ---> afin de cacher le picture counter s'il n'y a qu'une seule image
             <PictureCounter pictures={pictures} pictureIndex={pictureIndex} />
+            )}
             {pictures.length > 1 && (
                 <div className='carousel_arrows'>
                     <div
